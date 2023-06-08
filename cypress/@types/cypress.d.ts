@@ -19,15 +19,22 @@ declare namespace Cypress {
 declare namespace Cypress {
   interface Chainable {
     /**
-     * Logs in to a web application using the provided credentials or the default values from environment variables.
+     * Logs in to the web application using the provided credentials or the default values from environment variables.
      *
      * @param {string} [user] - The username for login. If not provided, the value from the 'user_name' environment variable will be used.
      * @param {string} [password] - The password for login. If not provided, the value from the 'user_password' environment variable will be used.
+     * @param {object} [options] - Additional options for login.
+     * @param {boolean} [options.cacheSession=true] - Specifies whether to cache the session across Cypress specs. Default is `true`.
      * @example
      * cy.login('my-username', 'my-password');
      * cy.login(); // Uses default values from environment variables
+     * cy.login('my-username', 'my-password', { cacheSession: false }); // Does not cache the session
      */
-    login(user?: string, password?: string): void;
+    login(
+      user?: string,
+      password?: string,
+      options?: { cacheSession?: boolean },
+    ): void;
   }
 }
 
