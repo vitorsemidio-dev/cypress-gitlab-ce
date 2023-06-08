@@ -1,6 +1,8 @@
 import { faker } from '@faker-js/faker';
 
 describe('Create Issue', () => {
+  beforeEach(() => cy.api_deleteProjects());
+
   const issue = {
     title: `issue-${faker.datatype.uuid()}`,
     description: faker.random.words(3),
