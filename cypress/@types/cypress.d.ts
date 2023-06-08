@@ -117,6 +117,20 @@ declare namespace Cypress {
 declare namespace Cypress {
   interface Chainable {
     /**
+     * Clones a Git repository via SSH using the provided project details.
+     *
+     * @param {object} project - The project details.
+     * @param {string} project.name - The name of the project.
+     * @example
+     * cy.cloneViaSSH({ name: 'my-project' });
+     */
+    cloneViaSSH(project: { name: string }): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
      * Creates a new issue in the web application using the provided issue details.
      *
      * @param {object} issue - The issue details.
