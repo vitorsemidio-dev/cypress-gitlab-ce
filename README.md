@@ -78,39 +78,39 @@ Para conseguir os valores a serem preenchidos, acesse o seguinte link onde mostr
 
 ### createIssue (API)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/6314fba0-4f3d-4f9d-bc34-a22551d7db18
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/4e425732-9b57-423e-ba77-e43f04a6ba65
 
 ### createProject (API)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/595fa1d7-8741-4364-b0e5-07b8fe6809e4
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/4cb3266d-28e3-493f-9c80-3f3894ec5857
 
 ### gitClone (CLI)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/04e6d594-5bd0-4442-b366-3978cb86cb89
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/3706ef47-54f4-4e32-ae63-7e916b2f85f5
 
 ### createIssue (GUI)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/56d82db4-2628-42b2-878f-720fd2a3702a
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/f1e810b9-20e6-4919-89b1-7ed4404fc5bf
 
 ### createProject (GUI)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/1eb87ee2-f343-4a06-91ae-5ddc3a7bd4a4
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/d2f66fd9-f51d-4e2b-a85d-769ea437d855
 
 ### login (GUI)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/bf03a9be-c5a1-46c6-bfab-816db4dc1ac5
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/32b2af92-a399-4d68-b170-b5634b316ab2
 
 ### logout (GUI)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/6a2da8e8-1f71-4eca-8b1d-ddac0beaf801
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/b055a456-ebc7-42e7-aa84-bd8d73a94caa
 
 ### setLabelOnIssue (GUI)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/a3f6487c-74e8-4c0d-b079-876dafcdd5c0
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/d78a2c7f-b183-43fe-aed4-91fc9038cb6a
 
 ### setMilestoneOnIssue (GUI)
 
-https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/f5869963-26fc-4c9a-a3d4-472ade741bcc
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/8bb7bd29-31b1-4502-8158-19bd5469bf7a
 
 ## Parar os containers
 
