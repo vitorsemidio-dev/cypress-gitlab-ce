@@ -39,7 +39,17 @@ Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina ante
 
    Você deverá ver uma lista dos containers em execução.
 
-5. Agora, seu ambiente de desenvolvimento está pronto! Acesse a aplicação no seu navegador em [http://localhost](http://localhost) e comece a trabalhar.
+5. Instale as dependências do projeto:
+
+   ```shell
+    npm install
+   ```
+
+6. Inicie o cypress:
+
+   ```shell
+    npm run cy:open
+   ```
 
 ## Parar os containers
 
