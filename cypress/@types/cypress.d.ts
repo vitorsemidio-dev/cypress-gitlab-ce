@@ -12,3 +12,17 @@ declare namespace Cypress {
     login(user?: string, password?: string): void;
   }
 }
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
+     * Logs out from the web application.
+     *
+     * This command triggers the logout process by clicking on the user avatar and selecting the "Sign out" option.
+     *
+     * @example
+     * cy.logout();
+     */
+    logout(): void;
+  }
+}
