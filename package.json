@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed",
     "cy:open": "cypress open"
   },
   "repository": {

@@ -45,11 +45,34 @@ Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina ante
     npm install
    ```
 
-6. Inicie o cypress:
+6. Preencha as variáveis de ambiente:
+
+   ```shell
+    cp cypress.env.example.json cypress.env.json
+   ```
+
+Para conseguir os valores a serem preenchidos, acesse o seguinte link onde mostra o passo a passo:
+
+[0. _Setup_ do ambiente local com Docker](./lessons/0.md)
+
+7. Inicie o cypress:
+
+   (modo interativo)
 
    ```shell
     npm run cy:open
    ```
+
+   ![npm run cy:open](<.github/npm-run-cy-open(1).png>)
+   ![npm run cy:open](<.github/npm-run-cy-open(2).png>)
+
+   (modo headless):
+
+   ```shell
+    npm run cy:run
+   ```
+
+![npm run cy:run](.github/npm-run-cy-run.png)
 
 ## Parar os containers
 
