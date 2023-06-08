@@ -1,6 +1,24 @@
 declare namespace Cypress {
   interface Chainable {
     /**
+     * Creates a new project using the GitLab API with the provided project details.
+     *
+     * @param {object} project - The project details.
+     * @param {string} project.name - The name of the project.
+     * @param {string} project.description - The description of the project.
+     * @example
+     * cy.api_createProject({
+     *   name: 'My Project',
+     *   description: 'This is a sample project.',
+     * });
+     */
+    api_createProject(project: { name: string; description: string }): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
      * Creates a new issue in the web application using the provided issue details.
      *
      * @param {object} issue - The issue details.
