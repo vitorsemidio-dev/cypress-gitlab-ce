@@ -1,6 +1,24 @@
 declare namespace Cypress {
   interface Chainable {
     /**
+     * Creates a new project in the web application using the provided project details.
+     *
+     * @param {object} project - The project details.
+     * @param {string} project.name - The name of the project.
+     * @param {string} project.description - The description of the project.
+     * @example
+     * cy.gui_createProject({
+     *   name: 'My Project',
+     *   description: 'This is a sample project.'
+     * });
+     */
+    gui_createProject(project: { name: string; description: string }): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
      * Logs in to a web application using the provided credentials or the default values from environment variables.
      *
      * @param {string} [user] - The username for login. If not provided, the value from the 'user_name' environment variable will be used.
