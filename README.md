@@ -74,6 +74,44 @@ Para conseguir os valores a serem preenchidos, acesse o seguinte link onde mostr
 
 ![npm run cy:run](.github/npm-run-cy-run.png)
 
+## Evidências de testes em vídeo
+
+### createIssue (API)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/6314fba0-4f3d-4f9d-bc34-a22551d7db18
+
+### createProject (API)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/595fa1d7-8741-4364-b0e5-07b8fe6809e4
+
+### gitClone (CLI)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/04e6d594-5bd0-4442-b366-3978cb86cb89
+
+### createIssue (GUI)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/56d82db4-2628-42b2-878f-720fd2a3702a
+
+### createProject (GUI)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/1eb87ee2-f343-4a06-91ae-5ddc3a7bd4a4
+
+### login (GUI)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/bf03a9be-c5a1-46c6-bfab-816db4dc1ac5
+
+### logout (GUI)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/6a2da8e8-1f71-4eca-8b1d-ddac0beaf801
+
+### setLabelOnIssue (GUI)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/a3f6487c-74e8-4c0d-b079-876dafcdd5c0
+
+### setMilestoneOnIssue (GUI)
+
+https://github.com/vitorsemidio-dev/cypress-gitlab-ce/assets/52754546/f5869963-26fc-4c9a-a3d4-472ade741bcc
+
 ## Parar os containers
 
 Se desejar parar os containers, execute o seguinte comando na raiz do projeto:
