@@ -19,6 +19,35 @@ declare namespace Cypress {
 declare namespace Cypress {
   interface Chainable {
     /**
+     * Deletes all projects using the GitLab API.
+     *
+     * This command retrieves all projects using the `cy.api_getAllProjects()` command, and then sends a DELETE request to delete each project.
+     *
+     * @example
+     * cy.api_deleteProjects();
+     */
+    api_deleteProjects(): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
+     * Retrieves all projects using the GitLab API.
+     *
+     * @returns {Chainable<Response>} The Cypress chainable containing the API response.
+     * @example
+     * cy.api_getAllProjects().then((response) => {
+     *   // Process the response
+     * });
+     */
+    api_getAllProjects(): Chainable<Response>;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
      * Creates a new issue in the web application using the provided issue details.
      *
      * @param {object} issue - The issue details.
