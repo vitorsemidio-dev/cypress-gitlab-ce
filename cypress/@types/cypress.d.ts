@@ -26,7 +26,29 @@ declare namespace Cypress {
       project: { name: string };
       title: string;
       description: string;
-    }): Chainable<Response>;
+    }): Chainable<Response<any>>;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
+     * Creates a new label for a project using the GitLab API with the provided details.
+     *
+     * @param {string} projectId - The ID of the project.
+     * @param {object} label - The label details.
+     * @param {string} label.name - The name of the label.
+     * @param {string} label.color - The color of the label.
+     * @example
+     * cy.api_createLabel('project-id', {
+     *   name: 'My Label',
+     *   color: '#ff0000'
+     * });
+     */
+    api_createLabel(
+      projectId: string,
+      label: { name: string; color: string },
+    ): void;
   }
 }
 
@@ -73,7 +95,7 @@ declare namespace Cypress {
      *   // Process the response
      * });
      */
-    api_getAllProjects(): Chainable<Response>;
+    api_getAllProjects(): Chainable<Response<any>>;
   }
 }
 
@@ -119,6 +141,20 @@ declare namespace Cypress {
      * });
      */
     gui_createProject(project: { name: string; description: string }): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
+     * Sets a label on an issue in the GUI using the provided label details.
+     *
+     * @param {object} label - The label details.
+     * @param {string} label.name - The name of the label to set.
+     * @example
+     * cy.gui_setLabelOnIssue({ name: 'Bug' });
+     */
+    gui_setLabelOnIssue(label: { name: string }): void;
   }
 }
 
