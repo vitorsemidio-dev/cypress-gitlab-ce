@@ -1,6 +1,38 @@
 declare namespace Cypress {
   interface Chainable {
     /**
+     * Creates a new issue in a project using the GitLab API with the provided issue details.
+     *
+     * This command first creates a new project using the `cy.api_createProject()` command, and then sends a POST request to create a new issue within that project.
+     *
+     * @param {object} issue - The issue details.
+     * @param {object} issue.project - The project details.
+     * @param {string} issue.project.name - The name of the project.
+     * @param {string} issue.title - The title of the issue.
+     * @param {string} issue.description - The description of the issue.
+     * @returns {Chainable<Response>} The Cypress chainable containing the API response.
+     * @example
+     * cy.api_createIssue({
+     *   project: {
+     *     name: 'my-project'
+     *   },
+     *   title: 'New Issue',
+     *   description: 'This is a sample issue.'
+     * }).then((response) => {
+     *   // Process the response
+     * });
+     */
+    api_createIssue(issue: {
+      project: { name: string };
+      title: string;
+      description: string;
+    }): Chainable<Response>;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
      * Creates a new project using the GitLab API with the provided project details.
      *
      * @param {object} project - The project details.
