@@ -55,6 +55,21 @@ declare namespace Cypress {
 declare namespace Cypress {
   interface Chainable {
     /**
+     * Creates a new milestone for a project using the GitLab API with the provided details.
+     *
+     * @param {string} projectId - The ID of the project.
+     * @param {object} milestone - The milestone details.
+     * @param {string} milestone.title - The title of the milestone.
+     * @example
+     * cy.api_createMilestone('project-id', { title: 'Release 1.0' });
+     */
+    api_createMilestone(projectId: string, milestone: { title: string }): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
      * Creates a new project using the GitLab API with the provided project details.
      *
      * @param {object} project - The project details.
@@ -155,6 +170,20 @@ declare namespace Cypress {
      * cy.gui_setLabelOnIssue({ name: 'Bug' });
      */
     gui_setLabelOnIssue(label: { name: string }): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
+     * Sets a milestone on an issue in the GUI using the provided milestone details.
+     *
+     * @param {object} milestone - The milestone details.
+     * @param {string} milestone.title - The title of the milestone to set.
+     * @example
+     * cy.gui_setMilestoneOnIssue({ title: 'Release 1.0' });
+     */
+    gui_setMilestoneOnIssue(milestone: { title: string }): void;
   }
 }
 
