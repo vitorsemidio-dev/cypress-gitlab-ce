@@ -1,6 +1,33 @@
 declare namespace Cypress {
   interface Chainable {
     /**
+     * Creates a new issue in the web application using the provided issue details.
+     *
+     * @param {object} issue - The issue details.
+     * @param {object} issue.project - The project details.
+     * @param {string} issue.project.name - The name of the project.
+     * @param {string} issue.title - The title of the issue.
+     * @param {string} issue.description - The description of the issue.
+     * @example
+     * cy.gui_createIssue({
+     *   project: {
+     *     name: 'my-project'
+     *   },
+     *   title: 'New Issue',
+     *   description: 'This is a sample issue.'
+     * });
+     */
+    gui_createIssue(issue: {
+      project: { name: string };
+      title: string;
+      description: string;
+    }): void;
+  }
+}
+
+declare namespace Cypress {
+  interface Chainable {
+    /**
      * Creates a new project in the web application using the provided project details.
      *
      * @param {object} project - The project details.
